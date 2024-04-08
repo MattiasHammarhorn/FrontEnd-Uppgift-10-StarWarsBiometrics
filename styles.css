@@ -1,0 +1,8 @@
+body {
+    background-image: linear-gradient(to bottom right, blue, lightblue);
+    background-attachment: fixed;
+}
+
+.cardContainer {
+    width: 250px;
+}

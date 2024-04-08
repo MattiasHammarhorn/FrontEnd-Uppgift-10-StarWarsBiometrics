@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
     <title>Draw a Card</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">SW Biometrics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Draw a Card</a>
+            </li>
+        </ul>
+    </nav>
     
-    <button id="cardButton">Draw a card</button>
-    
-    <div id="cardContainer">
-        <div class="card">
-            <img src="https://deckofcardsapi.com/static/img/7D.png">
+    <div class="container rounded-3 bg-light mt-5 p-5">
+        <h1 class="mb-3">Draw a card</h1>
+
+        <button id="cardButton">Draw a card</button>
+        
+        
+        <div id="cardContainer">
+            <div class="card">
+                <!-- <img src="https://deckofcardsapi.com/static/img/7D.png"> -->
+            </div>
         </div>
     </div>
 

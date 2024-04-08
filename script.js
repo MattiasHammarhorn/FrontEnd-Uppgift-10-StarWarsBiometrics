@@ -21,7 +21,6 @@ searchButton.addEventListener('click', function() {
 });
 
 function PrintCharacterInformationToOutputField(data) {
-    // height, mass, gender och hair_color
     let props = data.properties;
     let characterInformation = `Name: ${props.name}
         Height: ${props.height}

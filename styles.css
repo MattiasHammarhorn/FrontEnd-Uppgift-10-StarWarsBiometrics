@@ -3,6 +3,7 @@ body {
     background-attachment: fixed;
 }
 
-.cardContainer {
-    width: 250px;
+#cardContainer {
+    width: 250px !important;
+    margin: auto;
 }

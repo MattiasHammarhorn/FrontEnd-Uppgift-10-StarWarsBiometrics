@@ -20,13 +20,36 @@ cardButton.addEventListener('click', function() {
 
 function printCard(card) {
     cardContainer.innerHTML = '';
-    cardContainer.innerHTML = `
-    <div class="card">
-        <img class="img-fluid" src="${card.images.png}">
-        <div class="card-body">
-            <div class="card-title">
-                <h2>${card.value} OF ${card.suit}</h2>
-            </div>
-        </div>
-    </div>`;
+    // cardContainer.innerHTML = `
+    // <div class="card">
+    //     <img class="img-fluid" src="${card.images.png}">
+    //     <div class="card-body">
+    //         <div class="card-title">
+    //             <h2>${card.value} OF ${card.suit}</h2>
+    //         </div>
+    //     </div>
+    // </div>`;
+
+    let cardDiv = document.createElement('div');
+    cardDiv.classList.add("card");
+
+    let cardImg = document.createElement('img'); 
+    cardImg.classList.add("img-fluid");
+    cardImg.setAttribute('src', card.images.png);
+    cardDiv.appendChild(cardImg);
+
+    let cardBody = document.createElement('div');
+    cardBody.classList.add("card-body");
+
+    let cardTitle = document.createElement('div');
+    cardTitle.classList.add("card-title");
+
+    let cardHeader = document.createElement('h2');
+    cardHeader.innerHTML = `${card.value} OF ${card.suit}`;
+    cardTitle.appendChild(cardHeader);
+
+    cardBody.appendChild(cardTitle);
+    cardDiv.appendChild(cardBody);
+
+    cardContainer.append(cardDiv);
 }
